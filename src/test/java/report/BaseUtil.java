@@ -17,7 +17,15 @@ public class BaseUtil {
 
 		File source = shot.getScreenshotAs(OutputType.FILE);
 
-		FileUtils.copyFile(source, new File(
+	FileUtils.copyFile(source,new File("C:\\Users\\Lenovo\\eclipse-workspace\\Ganesh\\RealTimeScenarios\\src\\Attachments\\shot.png") );
+		
+		System.out.println("new changes added");
+		System.out.println("newly changes added");
+		System.out.println("new changes added");
+		System.out.println("new changes added");
+		System.out.println("new changes added");	
+ 
+		 FileUtils.copyFile(source, new File(
 				"C:\\Users\\Lenovo\\eclipse-workspace\\Ganesh\\RealTimeScenarios\\src\\Attachments\\shot.png"));
 
 		FileUtils.copyFile(source, new File(
@@ -31,7 +39,8 @@ public class BaseUtil {
 
 		FileUtils.copyFile(source, new File(
 				"C:\\Users\\Lenovo\\eclipse-workspace\\Ganesh\\RealTimeScenarios\\src\\Attachments\\shot.png"));
-
+		
+				
 		return source.getAbsolutePath();
 
 	
