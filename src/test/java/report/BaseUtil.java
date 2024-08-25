@@ -10,24 +10,41 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 
 public class BaseUtil {
-	
-	
+
 	private String getScreenshot(WebDriver driver) throws IOException {
-		
-		TakesScreenshot shot = (TakesScreenshot)driver;
-		
+
+		TakesScreenshot shot = (TakesScreenshot) driver;
+
 		File source = shot.getScreenshotAs(OutputType.FILE);
-		
-		FileUtils.copyFile(source,new File("C:\\Users\\Lenovo\\eclipse-workspace\\Ganesh\\RealTimeScenarios\\src\\Attachments\\shot.png") );
+
+	FileUtils.copyFile(source,new File("C:\\Users\\Lenovo\\eclipse-workspace\\Ganesh\\RealTimeScenarios\\src\\Attachments\\shot.png") );
 		
 		System.out.println("new changes added");
 		System.out.println("newly changes added");
 		System.out.println("new changes added");
 		System.out.println("new changes added");
-		System.out.println("new changes added");
+		System.out.println("new changes added");	
+ 
+		 FileUtils.copyFile(source, new File(
+				"C:\\Users\\Lenovo\\eclipse-workspace\\Ganesh\\RealTimeScenarios\\src\\Attachments\\shot.png"));
+
+		FileUtils.copyFile(source, new File(
+				"C:\\Users\\Lenovo\\eclipse-workspace\\Ganesh\\RealTimeScenarios\\src\\Attachments\\shot.png"));
+
+		FileUtils.copyFile(source, new File(
+				"C:\\Users\\Lenovo\\eclipse-workspace\\Ganesh\\RealTimeScenarios\\src\\Attachments\\shot.png"));
+
+		FileUtils.copyFile(source, new File(
+				"C:\\Users\\Lenovo\\eclipse-workspace\\Ganesh\\RealTimeScenarios\\src\\Attachments\\shot.png"));
+
+		FileUtils.copyFile(source, new File(
+				"C:\\Users\\Lenovo\\eclipse-workspace\\Ganesh\\RealTimeScenarios\\src\\Attachments\\shot.png"));
+		
 				
 		return source.getAbsolutePath();
-		
-		
-}
+
+	
+
+	
+	}
 }
