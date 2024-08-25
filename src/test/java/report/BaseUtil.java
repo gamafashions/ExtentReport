@@ -15,9 +15,13 @@ public class BaseUtil {
 	private String getScreenshot(WebDriver driver) throws IOException {
 		
 		TakesScreenshot shot = (TakesScreenshot)driver;
+		
 		File source = shot.getScreenshotAs(OutputType.FILE);
+		
 		FileUtils.copyFile(source,new File("C:\\Users\\Lenovo\\eclipse-workspace\\Ganesh\\RealTimeScenarios\\src\\Attachments\\shot.png") );
+		
 		return source.getAbsolutePath();
+		
 		
 }
 }
